@@ -1,0 +1,54 @@
+DonatCase:
+  TypeSave: mysql
+  MySql:
+    Host: 'jdbc:mysql://localhost:3306/nameDataBase'
+    User: root
+    Password: password
+  Languages: ru
+  LevelGroup: true
+  LevelsGroup:
+    creator: 10
+    depcreator: 10
+    support: 10
+    moder: 10
+    builder: 10
+    youtube: 6
+    immortal: 5
+    legend: 4
+    deluxe: 3
+    vipplus: 2
+    vip: 1
+    default: 0
+  Title:
+    Title: '%group'
+    SubTitle: ''
+  Cases:
+    aq_case:
+      Title: '&c&lДонат-&a&lКейс'
+      Commands:
+       - lp user %player group set %group
+      Items:
+        VIP:
+          Group: vip
+          Chance: 60
+          Item:
+            ID: IRON_SWORD
+            DisplayName: '&7&l[&aVIP&7&l]'
+        VIPPLUS:
+          Group: vipplus
+          Chance: 15
+          Item:
+            ID: GOLDEN_SWORD
+            DisplayName: '&7&l[&bVIP&6+&7&l]'
+        Deluxe:
+          Group: deluxe
+          Chance: 3
+          Item:
+            ID: DIAMOND_SWORD
+            DisplayName: '&7&l[&5Deluxe&7&l]'
+        Legend:
+          Group: legend
+          Chance: 2
+          Item:
+            ID: NETHERITE_SWORD
+            DisplayName: '&7&l[&dLegend&7&l]'
